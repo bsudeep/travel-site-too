@@ -30,7 +30,7 @@
 
   @mixin atMedium {
     &__button-container {
-      float: right;
+      order: 2;
     }
   }
 
@@ -107,6 +107,8 @@
     z-index: -1;
 
     @mixin atMedium {
+      display: flex;
+      justify-content: flex-end;
       opacity: 1;
       padding-top: 0;
       transform: scale(1);
