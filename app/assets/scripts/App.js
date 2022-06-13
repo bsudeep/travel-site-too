@@ -14,7 +14,7 @@ document.querySelectorAll('.open-modal').forEach(el => {
   el.addEventListener('click', e => {
     e.preventDefault();
     if (typeof theModal == 'undefined') {
-      import(/* webpackChunkName: 'modal'*/ './modules/Modal').then(Modal => {
+      import(/* webpackChunkName: 'modal' */ './modules/Modal').then(Modal => {
         theModal = new Modal.default();
         setTimeout(() => {
           theModal.openTheModal();
